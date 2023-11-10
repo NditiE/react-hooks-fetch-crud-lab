@@ -20,9 +20,7 @@ function QuestionForm({ onAddQuestion }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
     onAddQuestion(formData);
-
   
     setFormData({
       prompt: "",

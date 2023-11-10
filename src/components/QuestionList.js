@@ -1,9 +1,7 @@
 import React from "react";
-import QuestionItem from "./QuestionItem"; 
+import QuestionItem from "./QuestionItem";
 
 function QuestionList({ questions, onDelete, onUpdate }) {
-  
-
   const questionItems = questions.map((question) => (
     <QuestionItem
       key={question.id}

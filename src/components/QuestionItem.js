@@ -24,9 +24,13 @@ function QuestionItem({ question, onDelete, onUpdate }) {
     <li>
       <h4>Question {id}</h4>
       <h5>Prompt: {prompt}</h5>
-      <label>
+      <label htmlFor={`correctAnswer_${id}`}>
         Correct Answer:
-        <select value={selectedAnswer} onChange={handleSelectChange}>
+        <select
+          id={`correctAnswer_${id}`}
+          value={selectedAnswer}
+          onChange={handleSelectChange}
+        >
           {options}
         </select>
       </label>
